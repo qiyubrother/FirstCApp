@@ -12,5 +12,15 @@
 
 int _tmain(int argc, _TCHAR* argv[]) 
 {
+static inline int add(int a, int b);
+
+	printf("a+b=%d", add(10, 15));
 	return 0;
 }
+
+static inline int add(int a, int b)
+{
+    return a + b;
+}
+
+
